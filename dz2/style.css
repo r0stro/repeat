@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: darkslategray;
+    color: white;
+}
+
+.one {
+    font-size: 50px;
+    text-align: center;
+    text-transform: lowercase;
+    color: antiquewhite;
+}
+img {
+    border: 5px dotted white;
+    margin-left: 150px;
+}
+
+.two {
+    color: silver;
+    background: cadetblue;
+}

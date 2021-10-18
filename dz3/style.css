@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: darkslategray;
+    color: white;
+}
+
+.one {
+    font-size: 50px;
+    text-align: center;
+    text-transform: lowercase;
+    color: antiquewhite;
+}
+
+img {
+    border: 5px dotted white;
+    margin-left: 150px;
+}
+
+.two {
+    color: silver;
+    background: cadetblue;
+}
+
+.top {
+    background: black;
+}
+
+.mid {
+    background: silver;
+}
+
+.image {
+    background: cornflowerblue;
+}
+
+ul, ol , h1, h2, h3{
+    margin: 0;
+}
+h1.one {
+    text-align: right;
+    margin-right: 150px;
+}
