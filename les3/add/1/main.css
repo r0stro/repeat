@@ -1,0 +1,40 @@
+.body {
+    width: 1440px;
+    margin: auto;
+}
+
+.boxA {
+    background: silver;
+    width: 100%;
+    height: 200px;
+}
+
+.mid {
+    display: flex;
+}
+
+.boxB {
+    width: 100%;
+    height: 200px;
+    background: silver;
+}
+
+.boxFlex {
+    display: flex;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: silver;
+}
+
+.boxF {
+    width: 100%;
+    height: 400px;
+    background: silver;
+}
+
+.border {
+    border: white solid 3px;
+}

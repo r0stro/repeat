@@ -1,0 +1,36 @@
+.body {
+    width: 1000px;
+    margin: auto;
+    background: lightgray;
+}
+
+#header {
+    background: palegreen;
+    height: 150px;
+}
+
+.mid {
+    display: flex;
+}
+
+#menu {
+    height: 500px;
+    width: 25%;
+    background: palevioletred;
+}
+
+.posts {
+    width: 75%;
+}
+
+.post {
+    width: 100%;
+    height: 250px;
+    background: dodgerblue;
+}
+
+.footer {
+    background: yellow;
+    height: 150px;
+
+}

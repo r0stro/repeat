@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 1440px;
+    margin: auto;
+}
+
+.top {
+    background: silver;
+    height: 300px;
+}
+
+.mid__left {
+    width: 75%;
+    height: 700px;
+    background: silver;
+}
+
+.mid__right {
+    width: 25%;
+    height: 700px;
+    background: silver;
+}
+
+.mid {
+    display: flex;
+}
