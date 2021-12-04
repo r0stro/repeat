@@ -11,31 +11,37 @@
     //     - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
     //     (в першу, другу, третю или четверту частину години).
 
-    // let time = prompt('введіть число');
-    // if (time >= 0 && time <= 15) {
-    //     document.write('<div>перша</div>')
-    // } else if (time >15 && time <= 30) {
-    //     document.write('<div>друга</div>')
-    // } else if (time >30 && time <=45) {
-    //     document.write('<div>третя</div>')
-    // } else if (time >45 && time <=59) {
-    //     document.write('<div>четверта</div>')
-    // }
+    let time = prompt('введіть число');
+    if (time >= 0 && time <= 15) {
+        document.write('<div>перша</div>')
+    } else if (time > 15 && time <= 30) {
+        document.write('<div>друга</div>')
+    } else if (time > 30 && time <= 45) {
+        document.write('<div>третя</div>')
+    } else if (time > 45 && time <= 59) {
+        document.write('<div>четверта</div>')
+    }
 
     //     - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 
-    //  let day = prompt('введіть число');
-    // if (day >= 1 && day <= 10) {
-    //     document.write('<div>перша</div>')
-    // } else if (day >10 && day <= 20) {
-    //     document.write('<div>друга</div>')
-    // } else if (day >20 && day <=31) {
-    //     document.write('<div>третя</div>');}
+    let day = prompt('введіть число');
+    if (day >= 1 && day <= 10) {
+        document.write('<div>перша</div>')
+    } else if (day > 10 && day <= 20) {
+        document.write('<div>друга</div>')
+    } else if (day > 20 && day <= 31) {
+        document.write('<div>третя</div>');
+    }
 
     //     - У нас є змінна test, якщо  не дорівнює true, виведіть 'Вірно', інакше виведіть 'Неправильно'.
     //         Перевірте роботу скрипта при test, що дорівнює true, false. Напишіть два варіанти скрипта - з коротким записом(тернаркою)
-    //
-    //
+
+    let test1 = !!true ? 'Вірно' : 'Неправильно';
+    console.log(test1);
+
+    let test2 = !!false ? 'Вірно' : 'Неправильно';
+    console.log(test2);
+
     //     - Якщо змінна a не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
 
     let a = prompt('введіть а');
@@ -44,7 +50,46 @@
     } else document.write('<div>не вірно</div>')
 
     //     - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день.
-    //
+
+    let num = prompt('try');
+    switch (num) {
+        case '1':
+            document.write(`<ul>
+<li>Укр. мова</li>
+<li>ЯДС</li>
+<li>Фізра</li>
+</ul>`)
+            break;
+        case '2':
+            document.write(`<ul>
+<li>Матем.</li>
+<li>Фізика</li>
+<li>Хімія</li>
+</ul>`)
+            break;
+        case '3':
+            document.write(`<ul>
+<li>Укр. мова</li>
+<li>Геометрія</li>
+</ul>`)
+            break;
+        case '4':
+            document.write(`<ul>
+<li>Геогр</li>
+<li>Хімія</li>
+<li>Фізра</li>
+</ul>`)
+            break;
+        case '5':
+            document.write(`<ul>
+<li>Укр. мова</li>
+<li>Фізика</li>
+</ul>`)
+            break;
+        default:
+            document.write(`eror`)
+    }
+
     //     - Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.
 
     let year = prompt('Введіть рік');

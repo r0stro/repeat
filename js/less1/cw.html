@@ -5,24 +5,46 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>cw</title>
+    <title>cw less1</title>
 </head>
 <body>
 
 <script>
 
     //    1. Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor). Скласти результат цих чисел в змінній result.
-    let arr = [1, 14, 41, 31, 643, 4234, 6534, 234, 143, 9];
-    let result =
 
-        //    2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
-        //    3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
-        //    4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
-        //    5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
-        //    Значення площі зберігати в змінній s.
+    let arr = [17, 14, 45, 23, 74, 91, 32, 64, 71, 43];
+    let result = (arr[0] + arr[1] + arr[2] + arr[3] + arr[4] + arr[5] + arr[6] + arr[7] + arr[8] + arr[9])
+    console.log(result);
 
-        let
-    height = 23;
+    //    2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
+
+    let book1 = {name: 'asd', pages: 240, genre: 'fantasy'};
+
+    //    3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
+
+    let book2 = {name: 'qew', pages: 340, genre: 'history', authors: 'Den Braun'};
+
+    //    4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
+
+    let books = [
+        {name: 'qew', pages: 340, genre: 'history', authors: 'Den Braun'},
+        {name: 'ry', pages: 2200, genre: 'fantasy', authors: 'Oliver'},
+        {name: 'sdgf', pages: 30, genre: 'criminal', authors: 'London'},
+        {name: 'gsdg', pages: 140, genre: 'history', authors: 'King'},
+        {name: 'hthtr', pages: 90, genre: 'detective', authors: 'Martin'},
+    ]
+
+    console.log(books[0]);
+    console.log(books[1]);
+    console.log(books[2]);
+    console.log(books[3]);
+    console.log(books[4]);
+
+    //    5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+    //    Значення площі зберігати в змінній s.
+
+    let height = 23;
     let width = 10;
     let s = height * width;
     console.log(s);
