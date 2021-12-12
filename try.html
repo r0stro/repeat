@@ -27,10 +27,24 @@
     // }
 
 
-    function f(action, a, b) {
-
+    let maxArray = [200,3,4,5,6,10,40000,3,600]
+    function arrayMax(array) {
+        let max = array[0];
+        for (const element of array) {
+            if(element > max){
+                max = element;
+            }
+        }
+        return max;
     }
 
+    console.log(`<h2>Найбільший елемент масиву: ${arrayMax(maxArray)}</h2>`);
+    //
+    // function calk(a, b) {
+    //     return a + b;
+    // }
+    //
+    // calk(1, 2);
 </script>
 </body>
 </html>
