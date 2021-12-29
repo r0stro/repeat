@@ -71,3 +71,65 @@ for (let i = arr.length - 1; i >= 0; i--) {
 }
 
 // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+
+
+//     1. перебрати його циклом while
+
+let ri = arr.length - 1;
+while (ri >= 0) {
+    console.log(arr[ri])
+    ri--
+}
+
+//     2. перебрати його циклом for
+
+for (let  i = arr.length -1; i >= 0; i--) {
+    const arrElement = arr[i];
+    console.log(arrElement);
+}
+
+//     3. перебрати циклом while та вивести  числа тільки з непарним індексом
+
+let ri2 = arr.length - 1;
+while (ri2 >= 0) {
+    if (!(ri2 % 2 === 0))
+        console.log(arr[ri2])
+    ri2--;
+}
+
+// 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+
+for (let i = arr.length - 1;i >= 0; i--) {
+    if (!(i % 2 === 0)) {
+        console.log(arr[i]);
+    }
+}
+
+// 5. перебрати циклом while та вивести  числа тільки парні  значення
+
+let ro = arr.length - 1;
+while (ro >= 0) {
+    if (arr[ro] % 2 === 0) {
+        console.log(arr[ro]);
+    }
+
+    ro--;
+}
+
+// 6. перебрати циклом for та вивести  числа тільки парні  значення
+
+for (let i = arr.length - 1; i >= 0; i--) {
+    if (arr[i] % 2 === 0) {
+        console.log(arr[i]);
+    }
+}
+
+// 7. замінити кожне число кратне 3 на слово "okten"
+
+for (let k = arr.length - 1; k >= 0; k--) {
+    let arrElement = arr[k];
+    if (arrElement % 3 === 0) {
+        arrElement = 'okten';
+    }
+    console.log(arrElement);
+}
