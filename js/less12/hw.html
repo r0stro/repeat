@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .w20 {
+            width: 20%;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+
+    // 1.
+    // Отримати відповідь з цього ресурсу відповідь, та вивести в документ об'єкти. Застилізувати, за допомоги css, щоб отримати 5 елементів в рядку.
+    // Для кожного елементу свій блок div.post
+    // Всі характеристики повинні мати свої блоки всередені div.post
+    // https://jsonplaceholder.typicode.com/posts
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((response) => response.json())
+        .then((json) => {
+            for (const jsonElement of json) {
+                let divElement = document.createElement('div');
+                divElement.classList.add('w20')
+                let userId = document.createElement('div');
+                userId.innerText = `userId ${jsonElement.userId}`;
+                let id = document.createElement('div');
+                id.innerText = `id ${jsonElement.id}`;
+                let title = document.createElement('div');
+                title.innerText = jsonElement.title;
+                let body = document.createElement('div');
+                body.innerText = jsonElement.body;
+                divElement.append(userId, id, title, body);
+                document.body.appendChild(divElement);
+            }
+        });
+
+    //     2.
+    // Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті.
+    //     Для кожного елементу свій блок div.comment
+    // Всі характеристики повинні мати свої блоки всередені div.comment
+    // https://jsonplaceholder.typicode.com/comments
+    fetch('https://jsonplaceholder.typicode.com/comments')
+        .then((response) => response.json())
+        .then((json) => {
+            for (const jsonElement of json) {
+                let divElement = document.createElement('div');
+                divElement.classList.add('w20')
+                let postId = document.createElement('div');
+                postId.innerText = `postId ${jsonElement.postId}`;
+                let id = document.createElement('div');
+                id.innerText = `id ${jsonElement.id}`;
+                let name = document.createElement('div');
+                name.innerText = jsonElement.name;
+                let email = document.createElement('div');
+                email.innerText = jsonElement.email;
+                let body = document.createElement('div');
+                body.innerText = jsonElement.body;
+                divElement.append(postId, id, name, email, body);
+                document.body.appendChild(divElement);
+            }
+        });
+</script>
+
+</body>
+</html>

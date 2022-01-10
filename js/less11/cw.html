@@ -5,7 +5,9 @@
     <title>Title</title>
 </head>
 <body>
+<a href="favorites.html">favorites</a>
 <script>
+
     // є масив -
     let users = [
         {name: 'vasya', age: 31, status: false},
@@ -30,11 +32,12 @@
         btnFav.onclick = function () {
             let favorite = [];
             favorite.push(user);
-            localStorage.setItem('favirites', JSON.stringify(favorite));
+            localStorage.setItem('favorites', JSON.stringify(favorite));
         };
         userDiv.appendChild(btnFav);
         document.body.appendChild(userDiv);
-    };
+    }
 </script>
+
 </body>
 </html>

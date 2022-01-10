@@ -36,9 +36,9 @@ let maxArr = (number) => {
             max = num;
         }
     }
-    document.write(`${max}`);
+    return max;
 }
-maxArr(arr);
+console.log(maxArr(arr));
 
 // - створити функцію яка повертає найменьше число з масиву
 
@@ -50,10 +50,10 @@ let minArr = (number) => {
             min = num;
         }
     }
-    document.write(`${min}`);
+    return min;
 }
 
-minArr(arr);
+console.log(minArr(arr));
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 
@@ -62,9 +62,9 @@ let fnSum = () => {
     for (let number of arr) {
         zero = zero + number;
     }
-    console.log(zero);
+    return zero;
 }
-fnSum()
+console.log(fnSum());
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 
@@ -73,11 +73,11 @@ let fnMid = (num) => {
     for (let number of arr) {
         none = none + number;
     }
-    let all = none / num.length;
-    console.log(all);
+    all = none / num.length;
+    return all;
 }
 
-fnMid(arr);
+console.log(fnMid(arr));
 
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше (Math використовувати заборонено);
 
