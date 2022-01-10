@@ -30,7 +30,7 @@
         let btnFav = document.createElement('button');
         btnFav.innerText = 'add';
         btnFav.onclick = function () {
-            let favorite = [];
+            let favorite = JSON.parse(localStorage.getItem('favorites'));
             favorite.push(user);
             localStorage.setItem('favorites', JSON.stringify(favorite));
         };
