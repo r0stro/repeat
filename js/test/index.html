@@ -26,11 +26,9 @@
             for (const user of value) {
                 let userDiv = document.createElement('div');
                 let detailsLink = document.createElement('a');
-
-                userDiv.innerText = `${user.id} ${user.name}`;
-                detailsLink.innerText = 'Get info';
+                userDiv.innerText = `${user.id}. ${user.name}`;
+                detailsLink.innerText = 'more user unfo';
                 detailsLink.href = `user-details.html?user=${JSON.stringify(user)}`;
-
                 userDiv.appendChild(detailsLink);
                 document.body.appendChild(userDiv);
             }

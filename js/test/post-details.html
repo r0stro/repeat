@@ -15,12 +15,25 @@
     const JOSINUSer = new URL(location).searchParams.get('posts');
     const post = JSON.parse(JOSINUSer);
     console.log(post);
-    let arr = JSON.stringify(post, null, 2);
-    let htmlDivElement = document.createElement('div');
-    htmlDivElement.innerText = arr;
+
+    function printValues2(obj) {
+        for(let k in obj) {
+            if (obj[k] instanceof Object) {
+                printValues2(obj[k]);
+            } else {
+                console.log(`${k} - ${obj[k]}`);
+                let element = document.createElement('div');
+                element.innerHTML = (`${k} - ${obj[k]}`);
+                document.body.append(element);
+            }
+        }
+
+    }
+
+    printValues2(post);
+
     let boxComment = document.createElement('div');
-    document.body.append(htmlDivElement);
-    fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
+    fetch(`https://jsonplaceholder.typicode.com/posts/${post.userId}/comments`)
         .then(value => value.json())
         .then(value => {
             for (const valueElement of value) {

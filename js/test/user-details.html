@@ -17,9 +17,22 @@
     const JOSINUSer = new URL(location).searchParams.get('user');
     const user = JSON.parse(JOSINUSer);
     console.log(user);
-    let strin = JSON.stringify(user, null, 2);
-    let htmlDivElement = document.createElement('div');
-    htmlDivElement.innerText = strin
+
+    function printValues(obj) {
+        for (let k in obj) {
+            if (obj[k] instanceof Object) {
+                printValues(obj[k]);
+            } else {
+                console.log(`${k} - ${obj[k]}`);
+                let element = document.createElement('div');
+                element.innerHTML = (`${k} - ${obj[k]}`);
+                document.body.append(element);
+            }
+        }
+
+    }
+
+    printValues(user);
 
     let btn = document.createElement('button');
     btn.innerText = 'post of current user';
@@ -39,7 +52,7 @@
                 }
             })
     }
-    document.body.append(htmlDivElement, btn);
+    document.body.append(btn);
 
 </script>
 
